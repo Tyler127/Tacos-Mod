@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tacos-mod",
+	"version": "${version}",
+	"name": "tacos-mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tacos-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tacosmod.TacosMod"
+		],
+		"client": [
+			"tacosmod.client.TacosModClient"
+		],
+		"fabric-datagen": [
+			"tacosmod.client.TacosModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tacos-mod.mixins.json",
+		{
+			"config": "tacos-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
