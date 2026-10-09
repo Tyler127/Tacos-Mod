@@ -11,10 +11,6 @@ import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import java.util.List;
 
 public class BeefTacoItem extends Item {
-    public BeefTacoItem(Properties properties) {
-        super(properties.food(FOOD_PROPERTIES, CONSUMABLE_COMPONENT));
-    }
-
     public static final FoodProperties FOOD_PROPERTIES =
         new FoodProperties.Builder()
             .alwaysEdible()
@@ -45,4 +41,8 @@ public class BeefTacoItem extends Item {
                 0.025F
             ))
             .build();
+
+    public BeefTacoItem(Properties properties) {
+        super(properties.food(FOOD_PROPERTIES, CONSUMABLE_COMPONENT));
+    }
 }
