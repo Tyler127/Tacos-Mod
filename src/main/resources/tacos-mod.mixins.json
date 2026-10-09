@@ -3,7 +3,7 @@
 	"package": "tacosmod.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"BrewingStandBlockEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
