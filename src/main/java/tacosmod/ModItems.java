@@ -14,19 +14,19 @@ public class ModItems {
         // Get the event for modifying entries in the ingredients group.
         // And register an event handler that adds the item to the ingredients group.
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register((creativeTab) -> {
-                    creativeTab.accept(ModItems.BEEF_TACO);
-                    creativeTab.accept(ModItems.DOUGH);
-                    creativeTab.accept(ModItems.FLOUR);
-                    creativeTab.accept(ModItems.RAW_TORTILLA);
-                    creativeTab.accept(ModItems.TORTILLA);
-                });
+            .register((creativeTab) -> {
+                creativeTab.accept(ModItems.BEEF_TACO);
+                creativeTab.accept(ModItems.DOUGH);
+                creativeTab.accept(ModItems.FLOUR);
+                creativeTab.accept(ModItems.RAW_TORTILLA);
+                creativeTab.accept(ModItems.TORTILLA);
+            });
     }
 
     public static Item register(
-            ResourceKey<Item> itemKey,
-            Function<Item.Properties, Item> itemFactory,
-            Item.Properties settings
+        ResourceKey<Item> itemKey,
+        Function<Item.Properties, Item> itemFactory,
+        Item.Properties settings
     ) {
         // Create the item instance.
         Item item = itemFactory.apply(settings.setId(itemKey));
@@ -38,15 +38,15 @@ public class ModItems {
     }
 
     public static final Item BEEF_TACO = register(
-            ModItemIds.BEEF_TACO,
-            BeefTacoItem::new,
-            new Item.Properties()
+        ModItemIds.BEEF_TACO,
+        BeefTacoItem::new,
+        new Item.Properties()
     );
 
     public static final Item DOUGH = register(
-            ModItemIds.DOUGH,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.DOUGH,
+        Item::new,
+        new Item.Properties()
     );
 
     public static final Item FLOUR = register(
@@ -56,14 +56,14 @@ public class ModItems {
     );
 
     public static final Item RAW_TORTILLA = register(
-            ModItemIds.RAW_TORTILLA,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.RAW_TORTILLA,
+        Item::new,
+        new Item.Properties()
     );
 
     public static final Item TORTILLA = register(
-            ModItemIds.TORTILLA,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.TORTILLA,
+        Item::new,
+        new Item.Properties()
     );
 }
