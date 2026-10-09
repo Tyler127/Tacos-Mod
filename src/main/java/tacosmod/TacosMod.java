@@ -25,6 +25,10 @@ public class TacosMod implements ModInitializer {
 		// Register mod items
 		ModItems.initialize();
 
+		// Register mod potions
+		ModPotions.initialize();
+
+		LOGGER.info("Tacos Mod initialized!");
 	}
 
 	public static Identifier id(String path) {

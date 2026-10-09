@@ -1,7 +1,13 @@
 {
+  "item.minecraft.lingering_potion.effect.baja_blast_potion": "Lingering Baja Blast",
+  "item.minecraft.potion.effect.baja_blast_potion": "Baja Blast",
+  "item.minecraft.splash_potion.effect.baja_blast_potion": "Throwable Baja Blast",
+  "item.tacos-mod.baja_blast_syrup": "Baja Blast Syrup",
   "item.tacos-mod.beef_taco": "Beef Taco",
   "item.tacos-mod.dough": "Dough",
   "item.tacos-mod.flour": "Flour",
   "item.tacos-mod.raw_tortilla": "Raw Tortilla",
-  "item.tacos-mod.tortilla": "Tortilla"
+  "item.tacos-mod.tortilla": "Tortilla",
+  "tooltip.tacos-mod.baja_blast_potion.line1": "Mountain Dew with a blast of natural",
+  "tooltip.tacos-mod.baja_blast_potion.line2": "& artificial tropical lime flavor."
 }

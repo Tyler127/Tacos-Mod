@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tacos-mod:item/baja_blast_syrup"
+  }
+}

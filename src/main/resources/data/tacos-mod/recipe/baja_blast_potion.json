@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:brewing",
+  "input": {
+    "item": "minecraft:potion",
+    "potion_contents": {
+      "potion": "minecraft:water"
+    }
+  },
+  "output": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "tacos-mod:baja_blast_potion",
+        "custom_color": 6946763
+      }
+    }
+  },
+  "reagent": {
+    "item": "tacos-mod:baja_blast_syrup"
+  }
+}
