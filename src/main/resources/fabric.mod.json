@@ -3,13 +3,13 @@
 	"id": "tacos-mod",
 	"version": "${version}",
 	"name": "tacos-mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds some tacos",
 	"authors": [
-		"Me!"
+		"Tyler Larson"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Tyler127/Tacos-Mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/tacos-mod/icon.png",
