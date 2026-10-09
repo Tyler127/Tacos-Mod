@@ -39,7 +39,7 @@ public class ModItems {
 
     public static final Item BEEF_TACO = register(
             ModItemIds.BEEF_TACO,
-            Item::new,
+            BeefTacoItem::new,
             new Item.Properties()
     );
 
