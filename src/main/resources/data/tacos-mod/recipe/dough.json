@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "tacos-mod:flour",
+    "tacos-mod:flour",
+    "tacos-mod:flour",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "id": "tacos-mod:dough"
+  }
+}

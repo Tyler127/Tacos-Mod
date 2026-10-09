@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": "minecraft:wheat"
+  },
+  "result": {
+    "id": "tacos-mod:flour"
+  }
+}

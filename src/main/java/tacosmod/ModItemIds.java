@@ -11,5 +11,9 @@ public class ModItemIds {
     }
 
     public static final ResourceKey<Item> BEEF_TACO = create("beef_taco");
+    public static final ResourceKey<Item> DOUGH = create("dough");
+    public static final ResourceKey<Item> FLOUR = create("flour");
+    public static final ResourceKey<Item> RAW_TORTILLA = create("raw_tortilla");
+    public static final ResourceKey<Item> TORTILLA = create("tortilla");
 
 }

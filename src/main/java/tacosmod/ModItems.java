@@ -14,7 +14,13 @@ public class ModItems {
         // Get the event for modifying entries in the ingredients group.
         // And register an event handler that adds the item to the ingredients group.
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register((creativeTab) -> creativeTab.accept(ModItems.BEEF_TACO));
+                .register((creativeTab) -> {
+                    creativeTab.accept(ModItems.BEEF_TACO);
+                    creativeTab.accept(ModItems.DOUGH);
+                    creativeTab.accept(ModItems.FLOUR);
+                    creativeTab.accept(ModItems.RAW_TORTILLA);
+                    creativeTab.accept(ModItems.TORTILLA);
+                });
     }
 
     public static Item register(
@@ -37,4 +43,27 @@ public class ModItems {
             new Item.Properties()
     );
 
+    public static final Item DOUGH = register(
+            ModItemIds.DOUGH,
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final Item FLOUR = register(
+        ModItemIds.FLOUR,
+        Item::new,
+        new Item.Properties()
+    );
+
+    public static final Item RAW_TORTILLA = register(
+            ModItemIds.RAW_TORTILLA,
+            Item::new,
+            new Item.Properties()
+    );
+
+    public static final Item TORTILLA = register(
+            ModItemIds.TORTILLA,
+            Item::new,
+            new Item.Properties()
+    );
 }

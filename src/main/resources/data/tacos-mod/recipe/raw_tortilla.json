@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#u"
+  ],
+  "key": {
+    "#": "tacos-mod:dough",
+    "u": "tacos-mod:dough"
+  },
+  "result": {
+    "id": "tacos-mod:raw_tortilla"
+  }
+}

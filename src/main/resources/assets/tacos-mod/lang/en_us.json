@@ -1,3 +1,7 @@
 {
-  "item.tacos-mod.beef_taco": "Beef Taco"
+  "item.tacos-mod.beef_taco": "Beef Taco",
+  "item.tacos-mod.dough": "Dough",
+  "item.tacos-mod.flour": "Flour",
+  "item.tacos-mod.raw_tortilla": "Raw Tortilla",
+  "item.tacos-mod.tortilla": "Tortilla"
 }
