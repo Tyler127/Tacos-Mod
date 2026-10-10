@@ -1,4 +1,4 @@
-package tacosmod;
+package tacosmod.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
