@@ -1,4 +1,3 @@
-
 package tacosmod.mixin;
 
 import net.minecraft.core.BlockPos;
@@ -20,21 +19,21 @@ public abstract class BrewingStandBlockEntityMixin {
     private int brewTime;
 
     @Inject(
-            method = "serverTick",
-            at = @At(
-                    value = "FIELD",
-                    target = "Lnet/minecraft/world/level/block/entity/BrewingStandBlockEntity;brewTime:I",
-                    opcode = Opcodes.PUTFIELD,
-                    ordinal = 2,
-                    shift = At.Shift.AFTER
-            )
+        method = "serverTick",
+        at = @At(
+            value = "FIELD",
+            target = "Lnet/minecraft/world/level/block/entity/BrewingStandBlockEntity;brewTime:I",
+            opcode = Opcodes.PUTFIELD,
+            ordinal = 2,
+            shift = At.Shift.AFTER
+        )
     )
     private static void tacosmod$slowBajaBlast(
-            ServerLevel level,
-            BlockPos pos,
-            BlockState state,
-            BrewingStandBlockEntity entity,
-            CallbackInfo ci
+        ServerLevel level,
+        BlockPos pos,
+        BlockState state,
+        BrewingStandBlockEntity entity,
+        CallbackInfo ci
     ) {
         ItemStack reagent = entity.getItem(3);
         int tenMinutes = 12000;
