@@ -22,6 +22,9 @@ public class TacosMod implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Tacos Mod initializing...");
 
+		// Register mod effects
+		ModEffects.initialize();
+
 		// Register mod items
 		ModItems.initialize();
 
