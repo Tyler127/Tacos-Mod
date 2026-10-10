@@ -4,12 +4,12 @@
     "minecraft:cyan_dye",
     "minecraft:honey_bottle",
     "minecraft:honey_bottle",
-    "minecraft:sugar",
-    "minecraft:sugar",
-    "minecraft:sugar",
-    "minecraft:sugar",
-    "minecraft:sugar",
-    "minecraft:sugar"
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block"
   ],
   "result": {
     "id": "tacos-mod:baja_blast_syrup"
