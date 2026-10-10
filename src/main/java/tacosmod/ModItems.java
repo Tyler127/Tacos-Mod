@@ -11,39 +11,39 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item BAJA_BLAST_SYRUP = register(
-            ModItemIds.BAJA_BLAST_SYRUP,
-            BeefTacoItem::new,
-            new Item.Properties()
+        ModItemIds.BAJA_BLAST_SYRUP,
+        BeefTacoItem::new,
+        new Item.Properties()
     );
 
     public static final Item BEEF_TACO = register(
-            ModItemIds.BEEF_TACO,
-            BeefTacoItem::new,
-            new Item.Properties()
+        ModItemIds.BEEF_TACO,
+        BeefTacoItem::new,
+        new Item.Properties()
     );
 
     public static final Item DOUGH = register(
-            ModItemIds.DOUGH,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.DOUGH,
+        Item::new,
+        new Item.Properties()
     );
 
     public static final Item FLOUR = register(
-            ModItemIds.FLOUR,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.FLOUR,
+        Item::new,
+        new Item.Properties()
     );
 
     public static final Item RAW_TORTILLA = register(
-            ModItemIds.RAW_TORTILLA,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.RAW_TORTILLA,
+        Item::new,
+        new Item.Properties()
     );
 
     public static final Item TORTILLA = register(
-            ModItemIds.TORTILLA,
-            Item::new,
-            new Item.Properties()
+        ModItemIds.TORTILLA,
+        Item::new,
+        new Item.Properties()
     );
 
     public static void initialize() {
