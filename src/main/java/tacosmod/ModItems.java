@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import tacosmod.item.BeefTacoItem;
+import tacosmod.item.CrunchwrapItem;
 
 import java.util.function.Function;
 
@@ -20,6 +21,12 @@ public class ModItems {
     public static final Item BEEF_TACO = register(
         ModItemIds.BEEF_TACO,
         BeefTacoItem::new,
+        new Item.Properties()
+    );
+
+    public static final Item CRUNCHWRAP = register(
+        ModItemIds.CRUNCHWRAP,
+        CrunchwrapItem::new,
         new Item.Properties()
     );
 
@@ -53,11 +60,16 @@ public class ModItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
             .register((creativeTab) -> {
                 creativeTab.accept(ModItems.BAJA_BLAST_SYRUP);
-                creativeTab.accept(ModItems.BEEF_TACO);
                 creativeTab.accept(ModItems.DOUGH);
                 creativeTab.accept(ModItems.FLOUR);
                 creativeTab.accept(ModItems.RAW_TORTILLA);
                 creativeTab.accept(ModItems.TORTILLA);
+            });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+            .register((creativeTab) -> {
+                creativeTab.accept(ModItems.BEEF_TACO);
+                creativeTab.accept(ModItems.CRUNCHWRAP);
             });
     }
 
