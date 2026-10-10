@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tacos-mod:block/sugar_block"
+    }
+  }
+}
