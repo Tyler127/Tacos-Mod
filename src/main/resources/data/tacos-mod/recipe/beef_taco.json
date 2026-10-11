@@ -6,7 +6,7 @@
   ],
   "key": {
     "#": "minecraft:cooked_beef",
-    "B": "minecraft:bread"
+    "B": "tacos-mod:tortilla"
   },
   "result": {
     "id": "tacos-mod:beef_taco",
