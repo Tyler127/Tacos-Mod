@@ -3,15 +3,30 @@
   "pools": [
     {
       "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "tacos-mod:sugar_block"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:sugar",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": 0.50
+              },
+              "modifier": {
+                "type": "minecraft:set_count",
+                "count": 9
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tacos-mod:sugar_block"
+            }
+          ]
         }
       ]
     }
