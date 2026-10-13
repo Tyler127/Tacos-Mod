@@ -22,9 +22,9 @@ public class CrunchwrapItem extends Item {
         Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                 List.of(
-                    new MobEffectInstance(MobEffects.RESISTANCE, 10 * 20, 3),
-                    new MobEffectInstance(MobEffects.SPEED, 10 * 20, 5),
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 10 * 20, 0)
+                    new MobEffectInstance(MobEffects.RESISTANCE, 30 * 20, 3),
+                    new MobEffectInstance(MobEffects.SPEED, 30 * 20, 2),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 30 * 20, 2)
                 ),
                 1.0F
             ))

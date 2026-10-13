@@ -22,9 +22,9 @@ public class BeefTacoItem extends Item {
         Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                 List.of(
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 10 * 20, 0),
-                    new MobEffectInstance(MobEffects.SPEED, 10 * 20, 0),
-                    new MobEffectInstance(MobEffects.STRENGTH, 10 * 20, 0)
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 30 * 20, 0),
+                    new MobEffectInstance(MobEffects.SPEED, 30 * 20, 0),
+                    new MobEffectInstance(MobEffects.STRENGTH, 30 * 20, 0)
                 ),
                 1.0F
             ))
