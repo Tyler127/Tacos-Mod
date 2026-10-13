@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
-    "C",
-    "#"
+    " T ",
+    "BBB",
+    " T "
   ],
   "key": {
-    "#": "tacos-mod:tortilla",
-    "C": "minecraft:cooked_beef"
+    "T": "tacos-mod:tortilla",
+    "B": "tacos-mod:ground_beef"
   },
   "result": {
     "id": "tacos-mod:crunchwrap"
