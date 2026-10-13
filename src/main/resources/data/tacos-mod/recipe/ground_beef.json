@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:cooked_beef",
+  "result": {
+    "id": "tacos-mod:ground_beef",
+    "count": 3
+  }
+}

@@ -42,6 +42,12 @@ public class ModItems {
         new Item.Properties()
     );
 
+    public static final Item GROUND_BEEF = register(
+        ModItemIds.GROUND_BEEF,
+        Item::new,
+        new Item.Properties()
+    );
+
     public static final Item RAW_TORTILLA = register(
         ModItemIds.RAW_TORTILLA,
         Item::new,
@@ -62,6 +68,7 @@ public class ModItems {
                 creativeTab.accept(ModItems.BAJA_BLAST_SYRUP);
                 creativeTab.accept(ModItems.DOUGH);
                 creativeTab.accept(ModItems.FLOUR);
+                creativeTab.accept(ModItems.GROUND_BEEF);
                 creativeTab.accept(ModItems.RAW_TORTILLA);
                 creativeTab.accept(ModItems.TORTILLA);
             });
