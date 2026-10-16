@@ -4,93 +4,65 @@ import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import tacosmod.item.BeefTacoItem;
 import tacosmod.item.CrunchwrapItem;
+import tacosmod.item.SuspiciousTacoItem;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item BAJA_BLAST_SYRUP = register(
-        ModItemIds.BAJA_BLAST_SYRUP,
-        BeefTacoItem::new,
-        new Item.Properties()
-    );
 
-    public static final Item BEEF_TACO = register(
-        ModItemIds.BEEF_TACO,
-        BeefTacoItem::new,
-        new Item.Properties()
-    );
+    // Items grouped by creative tab
+    public static final List<Item> FOOD_DRINK_ITEMS = new ArrayList<>();
+    public static final List<Item> INGREDIENT_ITEMS = new ArrayList<>();
 
-    public static final Item CRUNCHWRAP = register(
-        ModItemIds.CRUNCHWRAP,
-        CrunchwrapItem::new,
-        new Item.Properties()
-    );
+    // Food and drink items
+    public static final Item BEEF_TACO = register(ModItemIds.BEEF_TACO, BeefTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
+    public static final Item CRUNCHWRAP = register(ModItemIds.CRUNCHWRAP, CrunchwrapItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
+    public static final Item SUSPICIOUS_TACO = register(ModItemIds.SUSPICIOUS_TACO, SuspiciousTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
 
-    public static final Item DOUGH = register(
-        ModItemIds.DOUGH,
-        Item::new,
-        new Item.Properties()
-    );
-
-    public static final Item FLOUR = register(
-        ModItemIds.FLOUR,
-        Item::new,
-        new Item.Properties()
-    );
-
-    public static final Item GROUND_BEEF = register(
-        ModItemIds.GROUND_BEEF,
-        Item::new,
-        new Item.Properties()
-    );
-
-    public static final Item RAW_TORTILLA = register(
-        ModItemIds.RAW_TORTILLA,
-        Item::new,
-        new Item.Properties()
-    );
-
-    public static final Item TORTILLA = register(
-        ModItemIds.TORTILLA,
-        Item::new,
-        new Item.Properties()
-    );
+    // Ingredient items
+    public static final Item BAJA_BLAST_SYRUP = register(ModItemIds.BAJA_BLAST_SYRUP, BeefTacoItem::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item DOUGH = register(ModItemIds.DOUGH, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item FLOUR = register(ModItemIds.FLOUR, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item GROUND_BEEF = register(ModItemIds.GROUND_BEEF, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item RAW_TORTILLA = register(ModItemIds.RAW_TORTILLA, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item TORTILLA = register(ModItemIds.TORTILLA, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
 
     public static void initialize() {
-        // Get the event for modifying entries in the ingredients group.
-        // And register an event handler that adds the item to the ingredients group.
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-            .register((creativeTab) -> {
-                creativeTab.accept(ModItems.BAJA_BLAST_SYRUP);
-                creativeTab.accept(ModItems.DOUGH);
-                creativeTab.accept(ModItems.FLOUR);
-                creativeTab.accept(ModItems.GROUND_BEEF);
-                creativeTab.accept(ModItems.RAW_TORTILLA);
-                creativeTab.accept(ModItems.TORTILLA);
-            });
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-            .register((creativeTab) -> {
-                creativeTab.accept(ModItems.BEEF_TACO);
-                creativeTab.accept(ModItems.CRUNCHWRAP);
-            });
+        // Add items to the creative mode tabs
+        addItemsToCreativeModeTab(CreativeModeTabs.INGREDIENTS, INGREDIENT_ITEMS);
+        addItemsToCreativeModeTab(CreativeModeTabs.FOOD_AND_DRINKS, FOOD_DRINK_ITEMS);
     }
 
     public static Item register(
         ResourceKey<Item> itemKey,
         Function<Item.Properties, Item> itemFactory,
-        Item.Properties settings
+        Item.Properties settings,
+        List<Item> creativeTabItems
     ) {
-        // Create the item instance.
+        // Create the item instance
         Item item = itemFactory.apply(settings.setId(itemKey));
 
-        // Register the item.
+        // Register the item
         Registry.register(BuiltInRegistries.ITEM, itemKey, item);
 
+        // Add the item to its creative tab
+        creativeTabItems.add(item);
+
         return item;
+    }
+
+    private static void addItemsToCreativeModeTab(ResourceKey<CreativeModeTab> tab, List<Item> items) {
+        CreativeModeTabEvents.modifyOutputEvent(tab).register(creativeTab -> {
+            for (Item item : items) {
+                creativeTab.accept(item);
+            }
+        });
     }
 }
