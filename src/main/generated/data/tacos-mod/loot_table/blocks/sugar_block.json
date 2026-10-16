@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
       "condition": {
         "type": "minecraft:survives_explosion"
       },
@@ -12,15 +11,15 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:sugar",
               "condition": {
                 "type": "minecraft:random_chance",
-                "chance": 0.50
+                "chance": 0.5
               },
               "modifier": {
                 "type": "minecraft:set_count",
                 "count": 9
-              }
+              },
+              "name": "minecraft:sugar"
             },
             {
               "type": "minecraft:item",
@@ -28,7 +27,8 @@
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1
     }
   ]
 }

@@ -22,7 +22,7 @@
 			"tacosmod.client.TacosModClient"
 		],
 		"fabric-datagen": [
-			"tacosmod.client.TacosModDataGenerator"
+			"datagen.TacosModDataGenerator"
 		]
 	},
 	"mixins": [
