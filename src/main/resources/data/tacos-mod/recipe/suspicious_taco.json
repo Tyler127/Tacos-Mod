@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    " T "
+  ],
+  "key": {
+    "R": "minecraft:rotten_flesh",
+    "T": "tacos-mod:tortilla"
+  },
+  "result": {
+    "id": "tacos-mod:suspicious_taco",
+    "count": 1
+  }
+}

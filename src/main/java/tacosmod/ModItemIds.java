@@ -13,9 +13,10 @@ public class ModItemIds {
     public static final ResourceKey<Item> GROUND_BEEF = create("ground_beef");
     public static final ResourceKey<Item> RAW_TORTILLA = create("raw_tortilla");
     public static final ResourceKey<Item> TORTILLA = create("tortilla");
+    public static final ResourceKey<Item> SUSPICIOUS_TACO = create("suspicious_taco");
 
     public static ResourceKey<Item> create(String name) {
-        // Create the item key.
+        // Create the item key
         return ResourceKey.create(Registries.ITEM, TacosMod.id(name));
     }
 }

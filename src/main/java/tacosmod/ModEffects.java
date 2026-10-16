@@ -8,10 +8,7 @@ import net.minecraft.core.Holder;
 import tacosmod.effect.FlightMobEffect;
 
 public class ModEffects {
-    public static final Holder<MobEffect> FLIGHT_EFFECT = register(
-        ModEffectIds.FLIGHT,
-        new FlightMobEffect()
-    );
+    public static final Holder<MobEffect> FLIGHT_EFFECT = register(ModEffectIds.FLIGHT, new FlightMobEffect());
 
     public static void initialize() {}
 

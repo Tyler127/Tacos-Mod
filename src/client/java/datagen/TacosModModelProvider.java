@@ -28,6 +28,7 @@ public class TacosModModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ModItems.FLOUR, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(ModItems.GROUND_BEEF, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(ModItems.RAW_TORTILLA, ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(ModItems.SUSPICIOUS_TACO, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(ModItems.TORTILLA, ModelTemplates.FLAT_ITEM);
 
     }
