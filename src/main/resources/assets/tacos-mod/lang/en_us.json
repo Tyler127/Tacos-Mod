@@ -1,6 +1,7 @@
 {
   "block.tacos-mod.sugar_block": "Sugar Cube",
   "effect.tacos-mod.flight": "Flight",
+  "effect.tacos-mod.zombie_disguise": "Zombie Disguise",
   "item.minecraft.lingering_potion.effect.baja_blast_potion": "Lingering Baja Blast",
   "item.minecraft.potion.effect.baja_blast_potion": "Baja Blast",
   "item.minecraft.splash_potion.effect.baja_blast_potion": "Throwable Baja Blast",

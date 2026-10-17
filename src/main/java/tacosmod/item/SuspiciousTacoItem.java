@@ -8,37 +8,37 @@ import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
-import java.util.List;
+import tacosmod.ModEffects;
 
 public class SuspiciousTacoItem extends Item {
     public static final FoodProperties FOOD_PROPERTIES =
         new FoodProperties.Builder()
             .alwaysEdible()
-            .nutrition(13)
-            .saturationModifier(14)
+            .nutrition(6)
+            .saturationModifier(6)
             .build();
+
+    static final int AMPLIFIER = 0;
+    static final boolean AMBIENT = false;
+    static final boolean VISIBLE = false;
 
     public static final Consumable CONSUMABLE_COMPONENT =
         Consumables.defaultFood()
             .onConsume(new ApplyStatusEffectsConsumeEffect(
-                List.of(
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 30 * 20, 0),
-                    new MobEffectInstance(MobEffects.SPEED, 30 * 20, 0),
-                    new MobEffectInstance(MobEffects.STRENGTH, 30 * 20, 0)
-                ),
-                1.0F
+                new MobEffectInstance(ModEffects.ZOMBIE_DISGUISE_EFFECT, 60 * 20, AMPLIFIER, AMBIENT, VISIBLE),
+                1
             ))
             .onConsume(new ApplyStatusEffectsConsumeEffect(
-                new MobEffectInstance(MobEffects.HUNGER, 10 * 20, 0),
+                new MobEffectInstance(MobEffects.HUNGER, 60 * 20, AMPLIFIER, AMBIENT, VISIBLE),
+                0.80F
+            ))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                new MobEffectInstance(MobEffects.NAUSEA, 20 * 20, AMPLIFIER, AMBIENT, VISIBLE),
+                0.50F
+            ))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                new MobEffectInstance(MobEffects.POISON, 10 * 20, AMPLIFIER, AMBIENT, VISIBLE),
                 0.20F
-            ))
-            .onConsume(new ApplyStatusEffectsConsumeEffect(
-                new MobEffectInstance(MobEffects.NAUSEA, 5 * 20, 0),
-                0.075F
-            ))
-            .onConsume(new ApplyStatusEffectsConsumeEffect(
-                new MobEffectInstance(MobEffects.POISON, 5 * 20, 0),
-                0.025F
             ))
             .build();
 

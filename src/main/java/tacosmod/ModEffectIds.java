@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class ModEffectIds {
     public static final ResourceKey<MobEffect> FLIGHT = create("flight");
+    public static final ResourceKey<MobEffect> ZOMBIE_DISGUISE = create("zombie_disguise");
 
     public static ResourceKey<MobEffect> create(String name) {
         return ResourceKey.create(
