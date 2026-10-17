@@ -26,7 +26,7 @@ public class ModItems {
     public static final Item SUSPICIOUS_TACO = register(ModItemIds.SUSPICIOUS_TACO, SuspiciousTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
 
     // Ingredient items
-    public static final Item BAJA_BLAST_SYRUP = register(ModItemIds.BAJA_BLAST_SYRUP, BeefTacoItem::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item BAJA_BLAST_SYRUP = register(ModItemIds.BAJA_BLAST_SYRUP, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item DOUGH = register(ModItemIds.DOUGH, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item FLOUR = register(ModItemIds.FLOUR, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item GROUND_BEEF = register(ModItemIds.GROUND_BEEF, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
