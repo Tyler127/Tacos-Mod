@@ -80,5 +80,5 @@ Brew in a Brewing Stand:
 RRR
  T 
 ```
-`R` = Ground Beef
+`R` = Rotten Flesh
 `T` = Tortilla
