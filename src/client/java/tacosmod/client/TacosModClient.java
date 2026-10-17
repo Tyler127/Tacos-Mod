@@ -10,6 +10,5 @@ public class TacosModClient implements ClientModInitializer {
 
 		// Register tooltips
 		PotionTooltips.register();
-
 	}
 }

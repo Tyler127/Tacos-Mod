@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ModItems {
-
     // Items grouped by creative tab
     public static final List<Item> FOOD_DRINK_ITEMS = new ArrayList<>();
     public static final List<Item> INGREDIENT_ITEMS = new ArrayList<>();

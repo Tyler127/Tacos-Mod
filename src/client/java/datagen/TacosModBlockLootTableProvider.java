@@ -43,5 +43,4 @@ public class TacosModBlockLootTableProvider extends FabricBlockLootSubProvider {
             ))
         );
     }
-
 }

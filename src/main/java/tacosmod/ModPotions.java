@@ -8,7 +8,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.alchemy.Potion;
 
 public class ModPotions {
-
     public static final Holder<Potion> BAJA_BLAST_POTION = register(
         ModPotionIds.BAJA_BLAST_POTION,
         "baja_blast_potion",
@@ -28,5 +27,4 @@ public class ModPotions {
             new Potion(name, effect)
         );
     }
-
 }
