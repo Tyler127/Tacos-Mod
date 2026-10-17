@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ModItems {
+    // All tacos-mod items
+    public static final List<Item> TACOS_MOD_ITEMS = new ArrayList<>();
+
     // Items grouped by creative tab
     public static final List<Item> FOOD_DRINK_ITEMS = new ArrayList<>();
     public static final List<Item> INGREDIENT_ITEMS = new ArrayList<>();
@@ -53,6 +56,9 @@ public class ModItems {
 
         // Add the item to its creative tab
         creativeTabItems.add(item);
+
+        // Add to list of all mod items
+        TACOS_MOD_ITEMS.add(item);
 
         return item;
     }

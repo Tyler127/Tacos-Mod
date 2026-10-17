@@ -7,6 +7,8 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import tacosmod.creative.TacosModCreativeTab;
+
 public class TacosMod implements ModInitializer {
 	public static final String MOD_ID = "tacos-mod";
 
@@ -33,6 +35,9 @@ public class TacosMod implements ModInitializer {
 
 		// Register mod potions
 		ModPotions.initialize();
+
+		// Register the mod's creative tab
+		TacosModCreativeTab.initialize();
 
 		LOGGER.info("Tacos Mod initialized!");
 	}
