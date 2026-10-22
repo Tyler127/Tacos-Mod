@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:cooked_chicken",
+  "result": {
+    "id": "tacos-mod:shredded_chicken",
+    "count": 3
+  }
+}

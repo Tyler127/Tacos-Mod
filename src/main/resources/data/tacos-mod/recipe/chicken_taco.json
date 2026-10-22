@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    " T "
+  ],
+  "key": {
+    "C": "tacos-mod:shredded_chicken",
+    "T": "tacos-mod:tortilla"
+  },
+  "result": {
+    "id": "tacos-mod:chicken_taco"
+  }
+}

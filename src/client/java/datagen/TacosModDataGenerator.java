@@ -10,6 +10,6 @@ public class TacosModDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(TacosModBlockLootTableProvider::new);
 		pack.addProvider(TacosModModelProvider::new);
-
+		pack.addProvider(TacosModItemTagProvider::new);
 	}
 }

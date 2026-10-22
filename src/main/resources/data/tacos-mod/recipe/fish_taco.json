@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F",
+    "T"
+  ],
+  "key": {
+    "F": "#tacos-mod:cooked_fish",
+    "T": "tacos-mod:tortilla"
+  },
+  "result": {
+    "id": "tacos-mod:fish_taco"
+  }
+}

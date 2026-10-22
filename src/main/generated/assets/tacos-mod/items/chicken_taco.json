@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tacos-mod:item/chicken_taco"
+  }
+}

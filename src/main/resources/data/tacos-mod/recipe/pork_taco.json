@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    " T "
+  ],
+  "key": {
+    "P": "tacos-mod:pulled_pork",
+    "T": "tacos-mod:tortilla"
+  },
+  "result": {
+    "id": "tacos-mod:pork_taco"
+  }
+}

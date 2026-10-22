@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P"
+  ],
+  "key": {
+    "P": "minecraft:cooked_porkchop"
+  },
+  "result": {
+    "id": "tacos-mod:pulled_pork",
+    "count": 3
+  }
+}

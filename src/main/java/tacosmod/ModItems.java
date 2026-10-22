@@ -7,9 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import tacosmod.item.BeefTacoItem;
-import tacosmod.item.CrunchwrapItem;
-import tacosmod.item.SuspiciousTacoItem;
+import tacosmod.item.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +23,10 @@ public class ModItems {
 
     // Food and drink items
     public static final Item BEEF_TACO = register(ModItemIds.BEEF_TACO, BeefTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
+    public static final Item CHICKEN_TACO = register(ModItemIds.CHICKEN_TACO, ChickenTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
     public static final Item CRUNCHWRAP = register(ModItemIds.CRUNCHWRAP, CrunchwrapItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
+    public static final Item FISH_TACO = register(ModItemIds.FISH_TACO, FishTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
+    public static final Item PORK_TACO = register(ModItemIds.PORK_TACO, PorkTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
     public static final Item SUSPICIOUS_TACO = register(ModItemIds.SUSPICIOUS_TACO, SuspiciousTacoItem::new, new Item.Properties(), FOOD_DRINK_ITEMS);
 
     // Ingredient items
@@ -34,6 +35,8 @@ public class ModItems {
     public static final Item FLOUR = register(ModItemIds.FLOUR, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item GROUND_BEEF = register(ModItemIds.GROUND_BEEF, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item RAW_TORTILLA = register(ModItemIds.RAW_TORTILLA, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item SHREDDED_CHICKEN = register(ModItemIds.SHREDDED_CHICKEN, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item PULLED_PORK = register(ModItemIds.PULLED_PORK, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item TORTILLA = register(ModItemIds.TORTILLA, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
 
     public static void initialize() {
