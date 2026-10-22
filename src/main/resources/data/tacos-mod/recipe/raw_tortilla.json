@@ -9,6 +9,7 @@
     "u": "tacos-mod:dough"
   },
   "result": {
-    "id": "tacos-mod:raw_tortilla"
+    "id": "tacos-mod:raw_tortilla",
+    "count": 2
   }
 }
