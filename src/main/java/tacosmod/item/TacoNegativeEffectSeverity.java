@@ -22,9 +22,9 @@ public enum TacoNegativeEffectSeverity {
         15, 0.15F
     ),
     EXTREME(
-        60, 0.80F,
+        60, 1.0F,
         30, 0.50F,
-        30, 0.20F
+        20, 0.10F
     );
 
     public final int hungerSeconds;
