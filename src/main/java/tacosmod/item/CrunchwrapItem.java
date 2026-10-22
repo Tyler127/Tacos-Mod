@@ -12,9 +12,9 @@ public class CrunchwrapItem extends TacoItem {
         createBaseConsumable(TacoNegativeEffectSeverity.NORMAL)
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                 List.of(
-                    new MobEffectInstance(MobEffects.RESISTANCE, 30 * 20, 3),
+                    new MobEffectInstance(MobEffects.RESISTANCE, 30 * 20, 1),
                     new MobEffectInstance(MobEffects.SPEED, 30 * 20, 2),
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 30 * 20, 2)
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 30 * 20, 1)
                 ),
                 1.0F
             ))
