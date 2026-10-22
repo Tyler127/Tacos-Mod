@@ -11,7 +11,7 @@ public class ModPotions {
     public static final Holder<Potion> BAJA_BLAST_POTION = register(
         ModPotionIds.BAJA_BLAST_POTION,
         "baja_blast_potion",
-        new MobEffectInstance(ModEffects.FLIGHT_EFFECT, 5 * 60 * 20, 0)
+        new MobEffectInstance(ModEffects.FLIGHT_EFFECT, 3 * 60 * 20, 0)
     );
 
     public static void initialize() {}
