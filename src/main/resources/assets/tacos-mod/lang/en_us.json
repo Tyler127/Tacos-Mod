@@ -1,5 +1,6 @@
 {
   "block.tacos-mod.sugar_block": "Sugar Cube",
+  "death.attack.tacos-mod.dr_pepper": "%1$s drank one flavor too many",
   "effect.tacos-mod.flight": "Flight",
   "effect.tacos-mod.twenty_three_flavors": "23 Flavors",
   "effect.tacos-mod.zombie_disguise": "Zombie Disguise",

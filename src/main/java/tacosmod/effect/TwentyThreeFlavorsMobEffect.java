@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.InstantaneousMobEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -37,6 +38,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
+
+import tacosmod.ModDamageTypes;
 
 public class TwentyThreeFlavorsMobEffect extends InstantaneousMobEffect {
     @FunctionalInterface
@@ -83,7 +86,7 @@ public class TwentyThreeFlavorsMobEffect extends InstantaneousMobEffect {
         new Flavor(COMMON, (level, target, source) -> teleportThroughPortal(level, target, (Portal) Blocks.NETHER_PORTAL, Level.NETHER)),
         new Flavor(COMMON, (level, target, source) -> strikeWithLightning(level, target)),
         playerOnly(COMMON, (level, player) -> spawnPhantoms(level, player, 20)),
-        new Flavor(RARE, (level, target, source) -> target.hurtServer(level, level.damageSources().genericKill(), Float.MAX_VALUE))
+        new Flavor(RARE, (level, target, source) -> target.hurtServer(level, drPepperDamage(level), Float.MAX_VALUE))
     );
 
     public TwentyThreeFlavorsMobEffect() {
@@ -155,6 +158,10 @@ public class TwentyThreeFlavorsMobEffect extends InstantaneousMobEffect {
         return new Flavor(weight, (level, target, source) ->
             target instanceof ServerPlayer player && action.apply(level, player)
         );
+    }
+
+    private static DamageSource drPepperDamage(ServerLevel level) {
+        return new DamageSource(level.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(ModDamageTypes.DR_PEPPER));
     }
 
     private static boolean give(ServerLevel level, ServerPlayer player, ItemStack stack) {
