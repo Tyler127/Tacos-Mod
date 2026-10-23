@@ -28,7 +28,7 @@ public abstract class BrewingStandBlockEntityMixin {
             shift = At.Shift.AFTER
         )
     )
-    private static void tacosmod$slowBajaBlast(
+    private static void tacosmod$slowSodaBrewing(
         ServerLevel level,
         BlockPos pos,
         BlockState state,
@@ -37,7 +37,9 @@ public abstract class BrewingStandBlockEntityMixin {
     ) {
         ItemStack reagent = entity.getItem(3);
         int tenMinutes = 12000;
-        if (reagent.is(ModItems.BAJA_BLAST_SYRUP)) {
+        if (reagent.is(ModItems.BAJA_BLAST_SYRUP)
+            || reagent.is(ModItems.MOUNTAIN_DEW_SYRUP)
+            || reagent.is(ModItems.DR_PEPPER_SYRUP)) {
             ((BrewingStandBlockEntityMixin) (Object) entity).brewTime = tenMinutes;
         }
     }

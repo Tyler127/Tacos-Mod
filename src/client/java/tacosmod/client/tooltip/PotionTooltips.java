@@ -20,6 +20,11 @@ public final class PotionTooltips {
             if (contents.potion().get().equals(ModPotions.BAJA_BLAST_POTION)) {
                 lines.add(Component.translatable("tooltip.tacos-mod.baja_blast_potion.line1"));
                 lines.add(Component.translatable("tooltip.tacos-mod.baja_blast_potion.line2"));
+            } else if (contents.potion().get().equals(ModPotions.DR_PEPPER_POTION)) {
+                lines.add(Component.translatable("tooltip.tacos-mod.dr_pepper_potion.line1"));
+                lines.add(Component.translatable("tooltip.tacos-mod.dr_pepper_potion.line2"));
+            } else if (contents.potion().get().equals(ModPotions.MOUNTAIN_DEW_POTION)) {
+                lines.add(Component.translatable("tooltip.tacos-mod.mountain_dew_potion.line1"));
             }
         });
     }

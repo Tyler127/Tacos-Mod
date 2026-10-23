@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:lime_dye",
+    "minecraft:honey_bottle",
+    "minecraft:honey_bottle",
+    "minecraft:glow_berries",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block"
+  ],
+  "result": {
+    "id": "tacos-mod:mountain_dew_syrup"
+  }
+}
