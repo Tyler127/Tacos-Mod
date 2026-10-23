@@ -10,9 +10,11 @@ public class ModItemIds {
     public static final ResourceKey<Item> CHICKEN_TACO = create("chicken_taco");
     public static final ResourceKey<Item> CRUNCHWRAP = create("crunchwrap");
     public static final ResourceKey<Item> DOUGH = create("dough");
+    public static final ResourceKey<Item> DR_PEPPER_SYRUP = create("dr_pepper_syrup");
     public static final ResourceKey<Item> FISH_TACO = create("fish_taco");
     public static final ResourceKey<Item> FLOUR = create("flour");
     public static final ResourceKey<Item> GROUND_BEEF = create("ground_beef");
+    public static final ResourceKey<Item> MOUNTAIN_DEW_SYRUP = create("mountain_dew_syrup");
     public static final ResourceKey<Item> PORK_TACO = create("pork_taco");
     public static final ResourceKey<Item> RAW_TORTILLA = create("raw_tortilla");
     public static final ResourceKey<Item> SHREDDED_CHICKEN = create("shredded_chicken");

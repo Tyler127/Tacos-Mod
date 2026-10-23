@@ -10,7 +10,9 @@ Mod that adds tacos to Minecraft :D
 | **Beef Taco**          | 13              | Health Boost, Speed, and Strength for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.                |
 | **Chicken Taco**       | 13              | Haste V for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.                                          |
 | **Crunchwrap Supreme** | 13              | Resistance II, Speed III, and Fire Resistance II for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds. |
+| **Dr Pepper Potion**   | —               | Grants one of 23 random effects (12 positive, 11 negative), most lasting 30 seconds.                                                                                                |
 | **Fish Taco**          | 13              | Luck for 2 minutes and Dolphin's Grace for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.           |
+| **Mountain Dew Potion** | —               | Grants Haste VIII for 3 minutes — enough to instantly mine deepslate with an Efficiency V netherite pickaxe.                                                                        |
 | **Pork Taco**          | 13              | Health Boost, Speed, and Strength for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.                |
 | **Suspicious Taco**    | 6               | Gives Zombie Disguise and Hunger for 1 minute. 50% chance of Nausea for 30 seconds, and 10% chance of Poison for 20 seconds.                                                        |
 
@@ -80,6 +82,29 @@ BBB
 Brew in a Brewing Stand:
 - Water Bottles
 - Baja Blast Syrup
+
+### Mountain Dew Syrup
+- 1 Lime Dye
+- 2 Honey Bottles
+- 1 Glow Berries
+- 5 Sugar Blocks
+
+### Mountain Dew Potion
+Brew in a Brewing Stand:
+- Water Bottles
+- Mountain Dew Syrup
+
+### Dr Pepper Syrup
+- 1 Red Dye
+- 1 Cocoa Beans
+- 1 Sweet Berries
+- 2 Honey Bottles
+- 4 Sugar Blocks
+
+### Dr Pepper Potion
+Brew in a Brewing Stand:
+- Water Bottles
+- Dr Pepper Syrup
 
 ### Suspicious Taco
 ```text

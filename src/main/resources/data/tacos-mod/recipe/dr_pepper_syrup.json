@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:red_dye",
+    "minecraft:cocoa_beans",
+    "minecraft:sweet_berries",
+    "minecraft:honey_bottle",
+    "minecraft:honey_bottle",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block",
+    "tacos-mod:sugar_block"
+  ],
+  "result": {
+    "id": "tacos-mod:dr_pepper_syrup"
+  }
+}

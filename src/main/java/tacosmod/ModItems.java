@@ -32,8 +32,10 @@ public class ModItems {
     // Ingredient items
     public static final Item BAJA_BLAST_SYRUP = register(ModItemIds.BAJA_BLAST_SYRUP, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item DOUGH = register(ModItemIds.DOUGH, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item DR_PEPPER_SYRUP = register(ModItemIds.DR_PEPPER_SYRUP, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item FLOUR = register(ModItemIds.FLOUR, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item GROUND_BEEF = register(ModItemIds.GROUND_BEEF, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
+    public static final Item MOUNTAIN_DEW_SYRUP = register(ModItemIds.MOUNTAIN_DEW_SYRUP, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item RAW_TORTILLA = register(ModItemIds.RAW_TORTILLA, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item SHREDDED_CHICKEN = register(ModItemIds.SHREDDED_CHICKEN, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
     public static final Item PULLED_PORK = register(ModItemIds.PULLED_PORK, Item::new, new Item.Properties(), INGREDIENT_ITEMS);
