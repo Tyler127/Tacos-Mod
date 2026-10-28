@@ -4,7 +4,11 @@
 ### Added
 - Added a creative mode tab for Tacos Mod items
 - Chicken Taco item
+- Dr Pepper potion
+- Dr Pepper Syrup item
 - Fish Taco item
+- Mountain Dew potion
+- Mountain Dew Syrup item
 - Pork Taco item
 - Pulled Pork item
 - Shredded Chicken item
