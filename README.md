@@ -6,7 +6,7 @@ Mod that adds tacos to Minecraft :D
 
 | Item                   | Hunger Restored | Abilities                                                                                                                                                                           |
 | ---------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Baja Blast Potion**  | —               | Grants Flight for 5 minutes.                                                                                                                                                        |
+| **Baja Blast Potion**  | —               | Grants Flight for 3 minutes.                                                                                                                                                        |
 | **Beef Taco**          | 13              | Health Boost, Speed, and Strength for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.                |
 | **Chicken Taco**       | 13              | Haste V for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds.                                          |
 | **Crunchwrap Supreme** | 13              | Resistance II, Speed III, and Fire Resistance II for 30 seconds. 20% chance of Hunger for 10 seconds, 7.5% chance of Nausea for 5 seconds, and 2.5% chance of Poison for 5 seconds. |
