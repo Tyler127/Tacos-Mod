@@ -16,6 +16,7 @@
 
 ### Fixed
 - Fixed an issue where the Baja Blast Syrup item was registered as a Beef Taco item
+- Fixed the Beef Taco item's texture to no longer have a black background
 
 ### Updated
 - Reduced Baja Blast potion's Flight status effect duration to three minutes
