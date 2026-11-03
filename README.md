@@ -77,89 +77,164 @@ Flavors that can't apply (e.g. a Nether teleport while already in the Nether) ar
 
 ## 📖 Recipes
 
-### Ingredients
+These are the exact screens you'll see in game. Shaped recipes work anywhere in the grid as long as the shape stays the same.
+**✋ 2×2 OK** means it also fits the crafting grid in your inventory.
 
-| | Result | Recipe | Station |
-|:-:|---|---|---|
-| <img src="docs/images/icons/flour.png" width="32" alt=""> | **Flour** | 1 Wheat | Crafting |
-| <img src="docs/images/icons/sugar_block.png" width="32" alt=""> | **Sugar Cube** | 9 Sugar (fill the 3×3 grid) | Crafting |
-| <img src="docs/images/icons/dough.png" width="32" alt=""> | **Dough** | 3 <img src="docs/images/icons/flour.png" width="16" alt=""> Flour + 1 Water Bucket | Crafting (shapeless) |
-| <img src="docs/images/icons/raw_tortilla.png" width="32" alt=""> | **Raw Tortilla** ×2 | 2 <img src="docs/images/icons/dough.png" width="16" alt=""> Dough side by side | Crafting |
-| <img src="docs/images/icons/tortilla.png" width="32" alt=""> | **Tortilla** | 1 <img src="docs/images/icons/raw_tortilla.png" width="16" alt=""> Raw Tortilla | Furnace |
-| <img src="docs/images/icons/ground_beef.png" width="32" alt=""> | **Ground Beef** ×3 | 1 Cooked Beef | Stonecutter |
-| <img src="docs/images/icons/shredded_chicken.png" width="32" alt=""> | **Shredded Chicken** ×3 | 1 Cooked Chicken | Stonecutter |
-| <img src="docs/images/icons/pulled_pork.png" width="32" alt=""> | **Pulled Pork** ×3 | 1 Cooked Porkchop | Crafting |
+<details>
+<summary><b>🗺️ Crafting overview: everything on one page</b></summary>
+<br>
+<p align="center">
+<img src="docs/images/tree_tacos.png" alt="Taco crafting tree" width="530">
+<img src="docs/images/tree_sodas.png" alt="Soda crafting tree" width="820">
+</p>
+</details>
 
-### Tacos
-
-All tacos are made on a Crafting Table.
+### 1 · Tortillas
 
 <table>
 <tr>
-<td align="center">
-<b>Beef Taco</b><br><br>
-<table>
-<tr><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td></tr>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-</table>
-➜ <img src="docs/images/icons/beef_taco.png" width="32" alt="Beef Taco">
+<td align="center" width="50%">
+<b>Flour</b> · ✋ 2×2 OK<br>
+<img src="docs/images/recipes/flour.png" alt="Flour recipe" width="352"><br>
+<sub>1 Wheat ➜ 1 Flour</sub>
 </td>
-<td align="center">
-<b>Chicken Taco</b><br><br>
-<table>
-<tr><td><img src="docs/images/icons/shredded_chicken.png" width="32" alt="Shredded Chicken"></td><td><img src="docs/images/icons/shredded_chicken.png" width="32" alt="Shredded Chicken"></td><td><img src="docs/images/icons/shredded_chicken.png" width="32" alt="Shredded Chicken"></td></tr>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-</table>
-➜ <img src="docs/images/icons/chicken_taco.png" width="32" alt="Chicken Taco">
-</td>
-<td align="center">
-<b>Pork Taco</b><br><br>
-<table>
-<tr><td><img src="docs/images/icons/pulled_pork.png" width="32" alt="Pulled Pork"></td><td><img src="docs/images/icons/pulled_pork.png" width="32" alt="Pulled Pork"></td><td><img src="docs/images/icons/pulled_pork.png" width="32" alt="Pulled Pork"></td></tr>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-</table>
-➜ <img src="docs/images/icons/pork_taco.png" width="32" alt="Pork Taco">
+<td align="center" width="50%">
+<b>Dough</b> · ✋ 2×2 OK<br>
+<img src="docs/images/recipes/dough.png" alt="Dough recipe" width="352"><br>
+<sub>3 Flour + 1 Water Bucket, any slots. You keep the bucket.</sub>
 </td>
 </tr>
 <tr>
-<td align="center">
-<b>Fish Taco</b><br><br>
-<table>
-<tr><td align="center"><sub>Cooked Cod<br>or Salmon</sub></td></tr>
-<tr><td align="center"><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td></tr>
-</table>
-➜ <img src="docs/images/icons/fish_taco.png" width="32" alt="Fish Taco">
+<td align="center" width="50%">
+<b>Raw Tortilla</b> · ✋ 2×2 OK<br>
+<img src="docs/images/recipes/raw_tortilla.png" alt="Raw Tortilla recipe" width="352"><br>
+<sub>2 Dough side by side ➜ <b>2</b> Raw Tortillas</sub>
 </td>
-<td align="center">
-<b>Crunchwrap Supreme</b><br><br>
-<table>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-<tr><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td><td><img src="docs/images/icons/ground_beef.png" width="32" alt="Ground Beef"></td></tr>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-</table>
-➜ <img src="docs/images/icons/crunchwrap.png" width="32" alt="Crunchwrap Supreme">
-</td>
-<td align="center">
-<b>Suspicious Taco</b><br><br>
-<table>
-<tr><td align="center"><sub>Rotten<br>Flesh</sub></td><td align="center"><sub>Rotten<br>Flesh</sub></td><td align="center"><sub>Rotten<br>Flesh</sub></td></tr>
-<tr><td></td><td><img src="docs/images/icons/tortilla.png" width="32" alt="Tortilla"></td><td></td></tr>
-</table>
-➜ <img src="docs/images/icons/suspicious_taco.png" width="32" alt="Suspicious Taco">
+<td align="center" width="50%">
+<b>Tortilla</b> · Furnace<br>
+<img src="docs/images/recipes/tortilla.png" alt="Tortilla recipe" width="352"><br>
+<sub>Smelt a Raw Tortilla (5 s, any fuel)</sub>
 </td>
 </tr>
 </table>
 
-### Drinks
+### 2 · Fillings
 
-Craft the syrup (shapeless), then brew it into a **Water Bottle** in a Brewing Stand.
+One cooked meat always makes the 3 pieces of filling a taco needs.
+
+<table>
+<tr>
+<td align="center" width="50%">
+<b>Ground Beef</b> · Stonecutter<br>
+<img src="docs/images/recipes/ground_beef.png" alt="Ground Beef recipe" width="352"><br>
+<sub>1 Cooked Beef ➜ <b>3</b> Ground Beef</sub>
+</td>
+<td align="center" width="50%">
+<b>Shredded Chicken</b> · Stonecutter<br>
+<img src="docs/images/recipes/shredded_chicken.png" alt="Shredded Chicken recipe" width="352"><br>
+<sub>1 Cooked Chicken ➜ <b>3</b> Shredded Chicken</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<b>Pulled Pork</b> · ✋ 2×2 OK<br>
+<img src="docs/images/recipes/pulled_pork.png" alt="Pulled Pork recipe" width="352"><br>
+<sub>1 Cooked Porkchop ➜ <b>3</b> Pulled Pork</sub>
+</td>
+<td></td>
+</tr>
+</table>
+
+### 3 · Tacos
+
+<table>
+<tr>
+<td align="center" width="50%">
+<b>Beef Taco</b><br>
+<img src="docs/images/recipes/beef_taco.png" alt="Beef Taco recipe" width="352"><br>
+<sub>3 Ground Beef over a Tortilla</sub>
+</td>
+<td align="center" width="50%">
+<b>Chicken Taco</b><br>
+<img src="docs/images/recipes/chicken_taco.png" alt="Chicken Taco recipe" width="352"><br>
+<sub>3 Shredded Chicken over a Tortilla</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<b>Pork Taco</b><br>
+<img src="docs/images/recipes/pork_taco.png" alt="Pork Taco recipe" width="352"><br>
+<sub>3 Pulled Pork over a Tortilla</sub>
+</td>
+<td align="center" width="50%">
+<b>Fish Taco</b> · ✋ 2×2 OK<br>
+<img src="docs/images/recipes/fish_taco.png" alt="Fish Taco recipe" width="352"><br>
+<sub>Cooked Cod <b>or</b> Cooked Salmon over a Tortilla</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<b>Crunchwrap Supreme</b><br>
+<img src="docs/images/recipes/crunchwrap.png" alt="Crunchwrap Supreme recipe" width="352"><br>
+<sub>3 Ground Beef between 2 Tortillas</sub>
+</td>
+<td align="center" width="50%">
+<b>Suspicious Taco</b><br>
+<img src="docs/images/recipes/suspicious_taco.png" alt="Suspicious Taco recipe" width="352"><br>
+<sub>3 Rotten Flesh over a Tortilla</sub>
+</td>
+</tr>
+</table>
+
+### 4 · Sodas
+
+Make Sugar Cubes, craft a syrup (any slots), then brew it into Water Bottles.
 Soda syrups brew slowly: **10 minutes** per batch.
 
-| | Syrup | Ingredients | | Brews into |
-|:-:|---|---|:-:|---|
-| <img src="docs/images/icons/baja_blast_syrup.png" width="32" alt=""> | **Baja Blast Syrup** | 6 <img src="docs/images/icons/sugar_block.png" width="16" alt=""> Sugar Cube · 2 Honey Bottle · 1 Cyan Dye | <img src="docs/images/icons/baja_blast_potion.png" width="32" alt=""> | Baja Blast |
-| <img src="docs/images/icons/mountain_dew_syrup.png" width="32" alt=""> | **Mountain Dew Syrup** | 5 <img src="docs/images/icons/sugar_block.png" width="16" alt=""> Sugar Cube · 2 Honey Bottle · 1 Glow Berries · 1 Lime Dye | <img src="docs/images/icons/mountain_dew_potion.png" width="32" alt=""> | Mountain Dew |
-| <img src="docs/images/icons/dr_pepper_syrup.png" width="32" alt=""> | **Dr Pepper Syrup** | 4 <img src="docs/images/icons/sugar_block.png" width="16" alt=""> Sugar Cube · 2 Honey Bottle · 1 Cocoa Beans · 1 Sweet Berries · 1 Red Dye | <img src="docs/images/icons/dr_pepper_potion.png" width="32" alt=""> | Dr Pepper |
+<table>
+<tr>
+<td align="center" width="50%">
+<b>Sugar Cube</b><br>
+<img src="docs/images/recipes/sugar_block.png" alt="Sugar Cube recipe" width="352"><br>
+<sub>9 Sugar ➜ 1 Sugar Cube</sub>
+</td>
+<td align="center" width="50%">
+<b>Baja Blast Syrup</b><br>
+<img src="docs/images/recipes/baja_blast_syrup.png" alt="Baja Blast Syrup recipe" width="352"><br>
+<sub>Cyan Dye + 2 Honey Bottles + 6 Sugar Cubes</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<b>Mountain Dew Syrup</b><br>
+<img src="docs/images/recipes/mountain_dew_syrup.png" alt="Mountain Dew Syrup recipe" width="352"><br>
+<sub>Lime Dye + 2 Honey Bottles + Glow Berries + 5 Sugar Cubes</sub>
+</td>
+<td align="center" width="50%">
+<b>Dr Pepper Syrup</b><br>
+<img src="docs/images/recipes/dr_pepper_syrup.png" alt="Dr Pepper Syrup recipe" width="352"><br>
+<sub>Red Dye + Cocoa Beans + Sweet Berries + 2 Honey Bottles + 4 Sugar Cubes</sub>
+</td>
+</tr>
+</table>
+
+<p align="center">
+<b>Baja Blast</b><br>
+<img src="docs/images/recipes/baja_blast_potion.png" alt="Baja Blast brewing recipe" width="554"><br>
+<sub>Baja Blast Syrup + Water Bottles</sub>
+</p>
+
+<p align="center">
+<b>Mountain Dew</b><br>
+<img src="docs/images/recipes/mountain_dew_potion.png" alt="Mountain Dew brewing recipe" width="554"><br>
+<sub>Mountain Dew Syrup + Water Bottles</sub>
+</p>
+
+<p align="center">
+<b>Dr Pepper</b><br>
+<img src="docs/images/recipes/dr_pepper_potion.png" alt="Dr Pepper brewing recipe" width="554"><br>
+<sub>Dr Pepper Syrup + Water Bottles</sub>
+</p>
 
 ## 📦 Installation
 
@@ -173,7 +248,14 @@ Soda syrups brew slowly: **10 minutes** per batch.
 ./gradlew build   # requires Java 25; the jar is written to build/libs/
 ```
 
-The README graphics in `docs/images` are generated from the mod's textures with `python3 docs/generate_images.py` (requires Pillow).
+The README images in `docs/images` are generated with Pillow from the mod's textures plus a vanilla Minecraft client jar (for the GUI and vanilla items):
+
+```sh
+python3 scripts/render_recipe_images.py --jar path/to/26.3.jar      # recipe screens + overview trees
+python3 scripts/generate_readme_images.py --jar path/to/26.3.jar    # banner + item icons
+```
+
+Without `--jar`, `render_recipe_images.py` looks for the launcher's jar in `.minecraft/versions`.
 
 ## 📜 License
 

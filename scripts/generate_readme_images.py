@@ -1,9 +1,15 @@
-"""Generate the README graphics in docs/images from the mod's textures.
+"""Generate the README banner and item icons in docs/images from the mod's textures.
 
-Usage (from the repo root):  python3 docs/generate_images.py
-Requires Pillow (pip install pillow).
+Usage (from the repo root):
+  pip install pillow
+  python3 scripts/generate_readme_images.py [--jar path/to/minecraft-client.jar]
+
+With --jar, the drink icons use the vanilla potion bottle (same jar as
+render_recipe_images.py); without it, a simple pixel-art bottle is drawn instead.
 """
 
+import argparse
+import zipfile
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -91,7 +97,21 @@ def make_bottle(color: int) -> Image.Image:
     return img.resize((ICON_SIZE, ICON_SIZE), Image.NEAREST)
 
 
-def build_icons() -> dict:
+def vanilla_bottle(jar: zipfile.ZipFile, color: int) -> Image.Image:
+    def texture(name):
+        with jar.open(f"assets/minecraft/textures/item/{name}.png") as file:
+            return Image.open(file).convert("RGBA")
+
+    overlay = texture("potion_overlay")
+    multipliers = ((color >> 16) & 255, (color >> 8) & 255, color & 255)
+    *rgb, alpha = overlay.split()
+    tinted = [band.point(lambda v, m=m: v * m // 255) for band, m in zip(rgb, multipliers)]
+    bottle = Image.merge("RGBA", (*tinted, alpha))
+    bottle.alpha_composite(texture("potion"))
+    return bottle.resize((ICON_SIZE, ICON_SIZE), Image.NEAREST)
+
+
+def build_icons(jar: zipfile.ZipFile | None) -> dict:
     ICONS.mkdir(parents=True, exist_ok=True)
     icons = {}
     for path in sorted((TEXTURES / "item").glob("*.png")):
@@ -100,7 +120,7 @@ def build_icons() -> dict:
     icons["flight"] = load_texture(TEXTURES / "mob_effect/flight.png")
     icons["zombie_disguise"] = load_texture(TEXTURES / "mob_effect/zombie_disguise.png")
     for name, color in DRINKS.items():
-        icons[name] = make_bottle(color)
+        icons[name] = vanilla_bottle(jar, color) if jar else make_bottle(color)
     for name, img in icons.items():
         img.save(ICONS / f"{name}.png", optimize=True)
     return icons
@@ -160,6 +180,9 @@ def build_banner(icons: dict) -> None:
 
 
 if __name__ == "__main__":
-    icons = build_icons()
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--jar", type=Path, help="vanilla Minecraft client jar for the potion bottle texture")
+    args = parser.parse_args()
+    icons = build_icons(zipfile.ZipFile(args.jar) if args.jar else None)
     build_banner(icons)
     print(f"Wrote {len(icons)} icons and a banner to {OUT.relative_to(ROOT)}")
