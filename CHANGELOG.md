@@ -1,3 +1,9 @@
+1.2.0 - 11/xx/2026
+==================
+
+### Updated
+- Updated textures for the Raw Tortilla, Tortilla, Beef Taco, Chicken Taco, Fish Taco, Pork Taco, and Suspicious Taco items.
+
 1.1.0 - 10/28/2026
 ==================
 
